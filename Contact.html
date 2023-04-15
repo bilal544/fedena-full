@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title=========================================== -->
+    <title>School Management Software</title>
+    <link rel="icon" href="./Assets/Images/facebook.png" type="image/x-icon" />
+    <!-- Bootstrap css files ============================================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons + fontawesome + google icons======================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script src="https://kit.fontawesome.com/c7dabd0806.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <!----------------owl-carousel-files==========================================-->
+    <link rel="stylesheet" href="./Assets/animation css/animate.css" />
+    <link rel="stylesheet" href="./Assets/animation css/owl.carousel.css" />
+    <link rel="stylesheet" href="./Assets/animation css/owl.theme.green.css" />
+    <!-- Own styling linking===================================== -->
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+    <!----------own scrolll animation css cdn========================================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!--------on scroll javascript animation cdn============================-->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body onload="myfunction()">
+   <!-----------------(HEADER)=======================-->
+   <header>
+    <!-- (NAVBAR)======================================-->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top bg-white shadow">
+        <div class="container-fluid px-4">
+          <a class="navbar-brand " href="Index.html">
+            <img
+              src="./Assets/Images/logo.webp"
+              alt=""
+              style="resize: none; width: 78px"
+            />
+          </a>
+          <button
+            class="navbar-toggler "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Feature-Tour.html" target="_blank">Feature Tour</a></li>
+                  <li><a class="dropdown-item" href="Fedena-Learn.html">Fedena Learn</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Mibile App</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Multi School</a></li>
+                  <li><a class="dropdown-item" href="Student-information-system.html">Student Information System</a></li>
+                  <li><a class="dropdown-item" href="#">Custom ERP</a></li>
+                  <li><a class="dropdown-item" href="#">Integration</a></li>
+                  <li><a class="dropdown-item" href="#">101 Reasons</a></li>
+                  <li><a class="dropdown-item" href="#">Fedena Difference</a></li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Partner
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Why Partner?</a></li>
+                  <li><a class="dropdown-item" href="#"> OEM Partner </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Case Studies</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Ebook </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Our Story</a></li>
+                  <li><a class="dropdown-item" href="#">Core Team</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Our Customers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Media and Press</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Awards and Recognitions</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Company Careers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html" target="_self">Contact</a>
+              </li>
+              <!-- btn section===========-->
+              <div class="btn-section ms-lg-3 ms-0">
+                <button type="button" class="bg-white border1 rounded-1">
+                  <a href="#" class="text-decoration-none"> Try For Free </a>
+                </button>
+                <!-- btn-2====================== -->
+                <button type="button" class="border2 rounded-1 mt-lg-0 mt-2">
+                  <a href="#" class="text-decoration-none">
+                    Request Live Demo
+                  </a>
+                </button>
+              </div>
+              <!----=========================phone icon=====================================-->
+              <div
+                class="phone-icon ms-2 d-lg-block d-none"
+              >
+                <a href="#" class="text-dark">
+                  <img src="./Assets/Images/call-icon.png" alt="" style="height: 40px;" title="+91-8047-0918-07">
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--------------------(BANNER AREA)======================================-->
+       <main style="margin: 6em 0;">
+        <section>
+            <div class="container px-lg-0 px-4 px-md-0 px-sm-2">
+                <div class="text-center">
+                    <strong class="h2 fw-bold">
+                        Interested in Fedena School Management System?
+                    </strong>
+                    <br><br>
+                    <p class="text-muted h4 opacity-75">
+                        We’d love to hear from you!
+                    </p>
+                </div>
+            </div>
+        </section>
+       </main>
+   </header>
+    <!----------back to top button===================================================-->
+    <button
+    type="button"
+    class="btn btn-floating btn-sm"
+    id="btn-back-to-top" title="Back to Top" onclick="topFunction()">
+    <i class="fas fa-angle-up text-white"></i>
+  </button>
+  <!------------------phone icon on scroll btn====================================================-->
+  <button type="button"
+  class="btn btn-floating btn-sm border"
+  id="phone-icon" title="+91-8047-0918-07">
+  <i class="fas fa-phone text-white"></i>
+  </button>
+    <!------------------email icon on scroll btn =============================================-->
+  <button type="button"
+  class="btn btn-floating btn-primary btn-sm border"
+  id="email-icon" title="Email Us">
+  <i class="bi bi-envelope-open text-white"></i>
+  </button>
+  <!-- (MAIN -BANNER- 2 )(FORM AND QUICK CONTACT)=================================-->
+  <main class="my-lg-5 my-1">
+    <section>
+        <div class="container px-lg-0 px-3">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <form>
+                        <!-- (NAME)================================== -->
+                        <div class="mb-3">
+                          <label for="name" class="form-label fw-bold">Name</label>
+                          <input type="text" class="form-control fw-bolder bg-light" placeholder="Name">
+                        </div>
+                        <!-- (EMAIL)====================================== -->
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label fw-bold">Email</label>
+                          <input type="email" class="form-control fw-bolder bg-light" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <!-- (phone number)====================================== -->
+                        <div class="mb-3">
+                            <label for="contactNumber" class="form-label fw-bold">Contact Number</label>
+                            <input type="tel" class="form-control fw-bolder bg-light" placeholder="Contact Number">
+                          </div>
+                           <!-- (location)================================== -->
+                          <div class="mb-3">
+                            <label for="Location" class="form-label fw-bold">Location</label>
+                            <input type="text" class="form-control fw-bolder bg-light" placeholder="City Name">
+                          </div>
+                          <!----------(RADIO BUTTONS)======================================-->
+                          <div class="mb-3">
+                            <label for="radioButton" class="form-label fw-bold">Please Select Your Interest</label>
+                            <br>
+                          <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                            <label class="btn text-start" for="option1">
+                                <strong class="fw-bolder h6">
+                                    I want to use Fedena
+                                </strong>
+                                <br>
+                                    Manage my institution
+                            </label>
+                            <!----------(RADIO BUTTON 2)======================================-->
+                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" checked>
+                            <label class="btn text-start mt-3 mt-lg-0" for="option2">
+                                <strong class="fw-bolder h6">
+                                    I want to resell Fedena
+                                </strong>
+                                <br>
+                                    Become a partner
+                            </label>
+                        </div>
+                        <!-------(TEXT AREA)========================================-->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Message</label>
+                            <br>
+                            <textarea class="form-control bg-light fw-bold" placeholder="if you have any specific message about fedena" id="floatingTextarea2" style="height: 100px"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-danger btn-lg h5">Submit</button>
+                      </form>
+                </div>
+                <!-- (RIGHT ALIGNMENT CONTENT QUICK CONTACT)=========================================-->
+                <div class="col-md-6">
+                    <div class="bg-light rounded-2 mx-lg-5 mx-0 mt-lg-0 mt-5 mb-5 mb-lg-0" style="padding: 10px 30px;">
+                        <strong class="fw-bold h5">
+                            Quick Contact
+                        </strong>
+                        <div class="d-flex flex-column pt-2 pb-lg-3">
+                            <a href="#" class="text-decoration-none text-danger h5 fw-bolder">
+                                +91-8047-0918-07
+                            </a>
+                            <a href="#" class="text-decoration-none text-danger h5 fw-bolder">
+                                sales@fedena.com
+                            </a>
+                        </div>
+                        <div class="break" style="border-bottom: 2px solid #c2c4c4;"></div>
+                        <br>
+                        <strong class="fw-bold h5 ">
+                            Key Contacts
+                        </strong>
+                        <!--------------contact-1===================================================-->
+                       <div class="d-flex mt-4 align-items-center">
+                        <figure>
+                            <img src="./Assets/Images/testimonial-2.png" alt="" height="80px" class="rounded-circle">
+                        </figure>
+                        <ul class="list-unstyled d-block lh-sm">
+                            <li style="line-height: .7;">
+                                <p class="fw-bold">
+                                 Sharath Krishnan
+                                </p>
+                               <a href="#" class="text-decoration-none text-danger fw-bold">
+                                +91-8095-6716-02
+                               </a>
+                               <br><br>
+                               <a href="#" class="text-decoration-none text-danger fw-bold">
+                                sharath@foradian.com
+                               </a>
+                            </li>
+                          
+                        </ul>
+                       </div>
+                       <!--------------contact-2===================================================-->
+                       <div class="d-flex mt-3 align-items-center">
+                        <figure>
+                            <img src="./Assets/Images/testimonial-1.png" alt="" height="80px" class="rounded-circle">
+                        </figure>
+                        <ul class="list-unstyled d-block lh-sm">
+                            <li style="line-height: .7;">
+                                <p class="fw-bold">
+                                    Arjun T.P
+                                </p>
+                               <a href="#" class="text-decoration-none text-danger fw-bold">
+                                +91-7349-1213-33
+                               </a>
+                               <br><br>
+                               <a href="#" class="text-decoration-none text-danger fw-bold">
+                                arjun@fedena.com
+                               </a>
+                            </li>
+                        </ul>
+                       </div>
+                       <div class="break" style="border-bottom: 2px solid #c2c4c4;"></div>
+                       <br>
+                       <strong class="fw-bolder h5">
+                        Address
+                       </strong>
+                       <p class="text-muted mt-lg-3">
+                        Foradian Technologies,
+                        <br>
+                        #2569/665, J K Landmark,
+                        <br>
+                        27th Main Rd, Sector 1,
+                        <br>
+                        HSR Layout, Bengaluru,
+                        <br>
+                        Karnataka - 560102. 
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+  <!-- main-section 9th for footer-->
+  <footer class="bg-light pt-5">
+    <div class="container-fluid px-lg-5 px-3">
+      <div class="row justify-content-between">
+        <!----------logo====================================-->
+        <div class="col-lg-1 col-md-1">
+          <a href="#" class="logo">
+            <img src="./Assets/Images/logo-7.png" alt="" style="width: 80px;">
+          </a>
+        </div>
+        <!----------------------product=========================================-->
+        <div class="col-lg-3 col-md-3 mt-lg-0 mt-3">
+          <ul class="list-unstyled">
+            <li>
+              <p class="text-muted h6 fw-bold">
+               Product
+              </p>
+            </li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Features Tour</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Fedena Learn</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Features Tour</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Mobile App</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Multi School</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Student Information System</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Integration</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Partner Program</a></li>
+            
+          </ul>
+        </div>
+        <!----------------------Why Fedena=========================================-->
+        <div class="col-lg-3 col-md-3 mt-lg-0 mt-3">
+          <ul class="list-unstyled">
+            <li>
+              <p class="text-muted h6 fw-bold">
+               Why Fedena?
+              </p>
+            </li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">101 Reasons</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Fedena Differences</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Custom ERP</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Why School Management Software</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Multi School</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg">Our Customers</a></li>
+          </ul>
+        </div>
+        <!----------------------Help=========================================-->
+        <div class="col-lg-2 col-md-2 mt-lg-0 mt-3">
+          <ul class="list-unstyled">
+            <li>
+              <p class="text-muted h6 fw-bold">
+               Help
+              </p>
+            </li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">Contact us</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">Support</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">Services</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">FAQ</a></li>
+            <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">API Playground</a></li>
+          </ul>
+        </div>
+        <!-----Foradian-technologies==============================================-->
+        <div class="col-lg-3 col-md-3 mt-lg-0 mt-3">
+          <p class="text-muted ">
+            Foradian Technologies,
+            #2569/665, J K Landmark,
+            27th Main Rd, Sector 1,
+            HSR Layout, Bengaluru,
+            Karnataka - 560102.
+          </p>
+          <ul class="list-unstyled mt-lg-0 mt-3">
+            <li class="text-dark fw-bold lh-lg">Contact us @
+              <br>
+              <a href="#" class="text-decoration-none text-dark fw-bold">
+                +91- 8047 0918 07
+              </a>
+            </li>
+            <li class="text-dark fw-bold lh-lg">
+               Download App
+               <br>
+              <a href="#">
+               <img src="./Assets/Images/apple-app-store-logo.jpg" alt="" style="width: 120px;">
+              </a>
+              <br>
+              <a href="#">
+                <img src="./Assets/Images/download.png" alt="" style="width: 130px;">
+               </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-------------copyright section===========================================================-->
+      <div class="row justify-content-between align-items-center mt-4">
+      <div class="col-lg-6 col-md-12">
+      <p class="text-muted text-lg-start text-center">
+        &#169;
+        2023 Foradian Technologies. All Rights Reserved.
+        <a href="#" class="text-dark text-decoration-none">
+          Terms
+        </a>
+        &
+        <a href="#" class="text-dark text-decoration-none">
+        Privacy
+        </a>
+      </p>
+    </div>
+    <!-------------social contact=====================================================-->
+    <div class="col-lg-6 col-md-12">
+       <ul class="list-unstyled d-flex justify-content-center align-items-center">
+        <li style="margin-right: 20px;"><a href="#" class="text-decoration-none text-dark">
+          <img src="./Assets/Images/facebook (1).png" alt="" style="width: 30px;">
+        </a></li>
+        <li style="margin-right: 20px;"><a href="#" class="text-decoration-none text-dark">
+          <img src="./Assets/Images/twitter-sign.png" alt="" style="width: 30px;">
+        </a></li>
+        <li style="margin-right: 20px;"><a href="#" class="text-decoration-none text-dark">
+          <img src="./Assets/Images/linkedin.png" alt="" style="width: 30px;">
+        </a></li>
+        <li><a href="#" class="text-decoration-none text-dark">
+          <img src="./Assets/Images/youtube-logo.png" alt="" style="width: 30px;">
+        </a></li>
+       </ul>
+    </div>
+  </div>
+    </div>
+   </footer>
+
+
+
+
+
+
+
+
+
+   <!-- js files cdn====================== -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="./Javascript/animation javascript/jquery.min.js"></script>
+   <script src="./Javascript/animation javascript/owl.carousel.min.js"></script>
+   <script src="./Javascript/My.js"></script>
+  </body>
+</html>
